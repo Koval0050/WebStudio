@@ -1086,8 +1086,8 @@ button {
   margin-top: 72px;
 }
 @media screen and (min-width: 768px) {
-  .wrap {  justify-content: start;
-
+  .wrap {
+    justify-content: start;
   }
 }
 .card-filter {
@@ -1095,14 +1095,16 @@ button {
   cursor: pointer;
   transition: box-shadow var(--transition-func);
 }
-.card-filter:hover,
-.card-filter:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.card-filter-link:hover .overlay,
-.card-filter-link:focus .overlay {
-  transform: translate(0, 0);
+@media screen and (min-width: 1200px) {
+  .card-filter:hover,
+  .card-filter:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+  .card-filter-link:hover .overlay,
+  .card-filter-link:focus .overlay {
+    transform: translate(0, 0);
+  }
 }
 .work-thumb {
   position: relative;
@@ -1119,7 +1121,6 @@ button {
   background-color: var(--primary-brand);
   transform: translateY(100%);
   transition: transform var(--transition-func);
-  /* overflow: scroll; */
 }
 .overlay-text {
   color: var(--main-light-color);
@@ -1133,7 +1134,6 @@ button {
   border: 1px solid var(--accent);
   border-top: 0;
 }
-
 /*========================/FILTER====================*/
 
 /*========================/PAGE PORTFOLIO====================*/
