@@ -1041,12 +1041,18 @@ button {
   padding-top: 100px;
   padding-bottom: 120px;
 }
-
 .filter-list {
-  justify-content: center;
   display: flex;
+  flex-wrap: wrap;
   column-gap: 24px;
+  row-gap: 16px;
 }
+@media screen and (min-width: 768px) {
+  .filter-list {
+    justify-content: center;
+  }
+}
+
 .btn-filter {
   font-family: inherit;
   font-weight: 600;
@@ -1073,10 +1079,16 @@ button {
 }
 .wrap {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   column-gap: 24px;
   row-gap: 48px;
-  flex-wrap: wrap;
   margin-top: 72px;
+}
+@media screen and (min-width: 768px) {
+  .wrap {  justify-content: start;
+
+  }
 }
 .card-filter {
   flex-basis: calc((100% - 96px) / 3);
